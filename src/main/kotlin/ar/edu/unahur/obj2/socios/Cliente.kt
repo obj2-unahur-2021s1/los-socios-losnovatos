@@ -20,7 +20,7 @@ object Resfriado: EstadoDeAnimo(){
 class Cliente(var dineroEnBolsillo: Double, var barrioEnElQueVive: Barrio, var estadoDeAnimo: EstadoDeAnimo) {
 
     fun propinaSegunEstadoDeAnimo(montoPedido:Double)= estadoDeAnimo.calcularPropina(this, montoPedido)
-    fun propinaSegunBarrio(montoPedido: Double)= barrioEnElQueVive.calcularPropina(this, montoPedido)
+    fun propinaTotalADar(montoPedido: Double)= barrioEnElQueVive.calcularPropina(this, montoPedido)
 
 }
 abstract class Barrio {
